@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %} Dashboard {% endblock %}
+{% block navbar %}
+
+{% endblock %}
+{% block content %}
+<div class="container mt-5">
+  <div class="jumbotron text-center">
+    <!-- <h1 class="display-4">Welcome to Our Product Store</h1>
+    <p class="lead">Find the best products at unbeatable prices</p> -->
+    <form class="form-inline justify-content-center mt-4">
+      <input class="form-control form-control-lg mr-2" type="search" placeholder="What are you looking for?" aria-label="Search">
+      <button class="btn btn-primary btn-lg" type="submit">Search</button>
+    </form>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-8">
+      <div class="row">
+        <!-- Example product item box -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="path/to/image.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Product Name</h5>
+              <p class="card-text">Brief description of the product.</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above div for more product items -->
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h3>Categories</h3>
+      <ul class="list-group">
+        <li class="list-group-item">Manufacturer 1</li>
+        <li class="list-group-item">Manufacturer 2</li>
+        <li class="list-group-item">Manufacturer 3</li>
+        <li class="list-group-item">Part Category 1</li>
+        <li class="list-group-item">Part Category 2</li>
+        <li class="list-group-item">Part Category 3</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
